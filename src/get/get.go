@@ -31,9 +31,9 @@ func WorkshopGetItem(url string) error {
 
 	switch runtime.GOOS {
 	case "windows":
-		steamcmd = absPath + "\\installed\\steamcmd.exe"
+		steamcmd = absPath + "\\steamcmd\\steamcmd.exe"
 	default:
-		steamcmd = absPath + "/installed/steamcmd.sh"
+		steamcmd = absPath + "/steamcmd/steamcmd.sh"
 	}
 
 	_, err = os.Stat(steamcmd)
